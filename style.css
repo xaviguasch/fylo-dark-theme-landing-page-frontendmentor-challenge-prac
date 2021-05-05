@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,400&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== */
+/* Custom properties */
+/* ================== */
+
+:root {
+  --ff-main: 'Open Sans', sans-serif;
+  --ff-secondary: 'Raleway', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-07: 0.438rem;
+  --fs-08: 0.5em;
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-60: 3.5rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+  --fs-80: 5rem;
+
+  --clr-dark-blue: hsl(217, 28%, 15%);
+  --clr-dark-blue-2: hsl(218, 28%, 13%);
+  --clr-dark-blue-3: hsl(216, 53%, 9%);
+  --clr-dark-blue-4: hsl(219, 30%, 18%);
+  --clr-light-cyan: hsl(176, 55%, 73%);
+  --clr-cyan: hsl(176, 68%, 64%);
+  --clr-blue: hsl(198, 60%, 50%);
+  --clr-red: hsl(0, 100%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--clr-dark-blue-2);
+  color: var(--clr-white);
+  font-family: var(--ff-main);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ================== */
+/* Typography */
+/* ================== */
+.list-element > a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-12);
+}
+
+.title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+.title.title--big {
+  font-size: var(--fs-24);
+}
+.feature .title,
+.partition-b .title {
+  font-size: var(--fs-18);
+}
+
+.text {
+  text-align: center;
+}
+
+.card .text {
+  font-size: var(--fs-10);
+  line-height: 1.8;
+}
+
+.link {
+  color: var(--clr-cyan);
+}
+
+.person__name {
+  font-size: var(--fs-10);
+  font-weight: var(--fw-bold);
+}
+
+.person__position {
+  font-size: var(--fs-07);
+}
+
+.icon-area .text {
+  font-size: var(--fs-16);
+}
+
+.footer .list-element > a {
+  font-family: var(--ff-main);
+  font-size: var(--fs-16);
+}
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+
+.btn {
+  background: linear-gradient(to right, var(--clr-cyan), var(--clr-blue));
+  border: none;
+  border-radius: 2em;
+  padding: 0.75em 4em;
+  color: var(--clr-white);
+  font-family: var(--ff-secondary);
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--clr-light-cyan);
+}
+
+.form > input {
+  /* pendent */
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+html,
+body {
+  /* Background */
+  /* background: url('./images/bg-mobile.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 100%;
+  padding: 0 2em;
+  width: 100%; */
+}
+
+.container {
+  /* flex properties */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 95%;
+  margin: 0em auto;
+  min-width: 290px;
+  max-width: 500px; */
+}
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
