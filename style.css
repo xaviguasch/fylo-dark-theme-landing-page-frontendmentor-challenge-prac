@@ -115,6 +115,10 @@ img {
   color: var(--clr-cyan);
   text-decoration: none;
 }
+.link:hover,
+.link:active {
+  color: var(--clr-white);
+}
 
 .person__name {
   font-size: var(--fs-10);
